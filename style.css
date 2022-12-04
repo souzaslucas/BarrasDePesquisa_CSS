@@ -3,59 +3,66 @@ body{
 }
 
 .container{
-    display: inline-block;
+    display: grid;
+    justify-content:center;
+    align-content:initial;
+
 }
 
 .linha{
     display: flex;
-    background-color: #000;
-    border-radius: 100px;
-    border: 1px solid #3b3b3b;
+    background-color: rgb(167, 255, 174);
+    border-radius: 0;
+    border: .2px solid transparent ;
 }
 
 .linha input{
     background: transparent;
     color: #fff;
-    font-weight: 600;
+    font-weight: 100;
     font-size: 15px;
     border: none;
-    padding: 0;
+    padding-right: 0;
     width: 0;
     outline: 0;
-    transition: all 0.2s;
+    transition: all .8s;
 
 }
 
+.icon_search{
+    width: 20px;
+    color: aqua;
+
+}
 .icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
-    margin: 7px;
-    border-radius: 50%;
+    width: 5px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 0%;
     background: #ffffff;
 }
 
 .icon i{
     position: absolute;
-    color: #222222;
+    color: #ffc400;
 }
 
 .icon .fa-xmark {
     opacity: 0;
 }
 
-.container:hover input, input:focus, input:not(:placeholder-shown){
+.container:hover input, input:focus, input:not(:placeholder-shown, .icon_search){
     width: 300px;
-    padding: 1rem;
     padding-left: .5rem;
 }
 
-.container:hover .fa-xmark, input:focus ~ .icon .fa-xmark, input:not(:placeholder-shown) ~ .icon .fa-xmark {
+.container:hover .fa-xmark, input:focus ~ .icon .fa-xmark, input:not(:placeholder-shown,) ~ .icon .fa-xmark {
     opacity: 1;
 }
 
-.container:hover .fa-search, input:focus ~ .icon .fa-search,input:not(:placeholder-shown) ~ .icon .fa-search {
+.container:hover .fa-search, input:focus ~ .icon .fa-search,input:not(:placeholder-shown) ~ .icon .fa-search .icon_search {
     opacity: 0;
 }
