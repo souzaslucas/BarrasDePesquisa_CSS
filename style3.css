@@ -1,0 +1,47 @@
+.container__3{
+    display: grid;
+}
+
+.linha_3{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.linha_3 input{
+    font-size: 15px;
+    font-weight: 300;
+    outline: none;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color: white;
+    width: 0;
+    padding: 2px;
+    transition: all .8s;
+    
+}
+
+.linha_3 input:placeholder-shown{
+    color: aqua;
+}
+
+.icon_search--3{
+    width: 20px;
+    border-bottom: 2px solid black;
+    
+}
+
+.icon--3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2px;
+    height: 90%;
+    background: #ffffff;
+}
+
+.container__3:hover input, input:focus, input:not(:placeholder-shown) {
+    width: 300px;
+    padding-left: 8px;
+}

@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+
 body{
     background-color: #124a7e;
+    display: grid;
+    grid-gap: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-weight: 500;
+    color: white;
 }
 
 .container{
     display: grid;
     justify-content:center;
-    align-content:initial;
 
 }
 

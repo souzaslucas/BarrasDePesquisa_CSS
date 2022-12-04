@@ -1,0 +1,61 @@
+.container__2{
+    display: grid;
+    justify-content: center;
+}
+
+.linha_2{
+    display: flex;
+    background-color: aqua;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+
+
+.linha_2 input{
+    background: transparent;
+    color: #fff;
+    font-weight: 100;
+    font-size: 15px;
+    border: none;
+    padding-right: 0;
+    width: 0;
+    outline: 0;
+    transition: all .8s;
+}
+
+
+.icon_search--2{
+    width: 20px;
+}
+
+.icon--2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.icon_search--2{
+    opacity: 1;
+    transition: all .8s;
+}
+
+.icon i{
+    position: absolute;
+    color: #ffc400;
+}
+
+
+.icon .fa-xmark {
+    opacity: 0;
+}
+
+.container__2:hover input, input:focus, input:not(:placeholder-shown) {
+    width: 300px;
+    padding-left: 10px;  
+}
+
